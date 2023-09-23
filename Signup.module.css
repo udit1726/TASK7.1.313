@@ -1,0 +1,78 @@
+/* Updated CSS to place the "Sign Up" button above the inputs */
+
+.container {
+    height: 100%;
+    min-height: 100vh;
+    width: 100%;
+    background: linear-gradient(to right, #72e5ee, #355de1,#6c337e ) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Added to center the innerBox and footer vertically */
+  }
+  
+  .innerBox {
+    min-width: 480px;
+    height: fit-content;
+    background-color: #7ee8f6;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+    padding: 30px ;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-family:monospace;
+  }
+  
+  .footer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .footer .error {
+    font-weight: bold;
+    font-size: 0.875rem;
+    color: #ab2a09;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  
+
+  .footer button {
+    outline: none;
+    border: none;
+    background-color: #234e00;
+    color: #f0eaea;
+    border-radius: 5px;
+    font-weight:100;
+    font-size: 1rem;
+    padding: 10px 16px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    cursor: pointer;
+    border: solid 2px #000;
+  }
+  
+  .footer button:disabled {
+    background-color: rgb(212, 152, 152) !important;
+  }
+  .footer button:hover {
+    background-color: #f8cc5f;
+    color: #000;
+  }
+  
+  
+  .footer p {
+    font-weight: 700;
+    color: #000;
+
+  }
+  
+  .footer p span {
+    font-weight: bolder;
+    color: #449105;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    letter-spacing: 1px;
+    font-size:20px;
+  }
+  
