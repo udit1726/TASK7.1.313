@@ -13,25 +13,25 @@ function Login() {
   });
   const [errorMsg, setErrorMsg] = useState("");
   const [submitButtonDisabled, setSubmitButtonDisabled] = useState(false);
-
   const handleSubmission = () => {
     if (!values.email || !values.pass) {
       setErrorMsg("LOGIN FAILED. TRY AGAIN !!");
       return;
     }
     setErrorMsg("");
-
+  
     setSubmitButtonDisabled(true);
     signInWithEmailAndPassword(auth, values.email, values.pass)
       .then(async (res) => {
         setSubmitButtonDisabled(false);
-        navigate("/");
+        navigate("/welcome"); // Redirect to the welcome page after login
       })
       .catch((err) => {
         setSubmitButtonDisabled(false);
         setErrorMsg(err.message);
       });
   };
+  
 
   return (
     <div className={styles.container}>
